@@ -1,0 +1,24 @@
+{
+  "name": "initial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kostyshyn/hoops-views.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kostyshyn/hoops-views/issues"
+  },
+  "homepage": "https://github.com/Kostyshyn/hoops-views#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "opn": "~4.0.2"
+  }
+}
