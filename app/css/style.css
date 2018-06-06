@@ -2,8 +2,47 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	padding: 30px;
 }
-h1 {
-	color: grey;
+.place {
+	height: 100px;
+	width: 100px;
+	background-color: #c1c1c1;
+}
+
+.products-carousel {
+	width: 100px;
+	display: inline-block;
+}
+
+/* general */
+
+/* header */
+
+.sub-header {
+	height: 100px;
+	background-color: red;
+}
+.navigation	{
+	height: 40px;
+	background-color: #c1c1c1;
+}
+
+/* footer */
+
+footer {
+	height: 250px;
+	background-color: grey;
+}
+
+/* pages */
+
+.main-container {
+	min-height: 500px;
+}
+
+/* product */
+
+.product-item-wrapper {
+	height: 500px;
+	background-color: lightblue;
 }
