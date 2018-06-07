@@ -31,14 +31,21 @@
 //     }]
 // });
 
-$('.slider').slick({
-    slidesToShow: 1,        
-    autoplay: true,
-    autoplaySpeed: 5000,
-    dots: true,
-    infinite: true,        
-    speed: 300,
-    fade: true,   
-    prevArrow: '<button type="button" class="slick-prev"><</button>',
-    nextArrow: '<button type="button" class="slick-next">></button>'     
+$(() => {
+	$('.slider').slick({
+	    slidesToShow: 1,        
+	    autoplay: true,
+	    autoplaySpeed: 5000,
+	    dots: true,
+	    infinite: true,        
+	    speed: 300,
+	    fade: true,   
+	    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
+	    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>'     
+	});
+	// $('.mobile-nav').fadeOut(0);
+	// $('.nav-button').click((e) => {
+	// 	$('.nav-button').toggleClass('open');
+	// 	$('.mobile-nav').fadeToggle();
+	// });
 });
