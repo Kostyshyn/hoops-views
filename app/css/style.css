@@ -47,7 +47,6 @@ body {
 
 footer {
 	height: 250px;
-	background-color: grey;
 }
 
 /* pages */
@@ -62,3 +61,61 @@ footer {
 	height: 500px;
 	background-color: lightblue;
 }
+
+/* main carousel */
+
+.slider {
+
+}
+.slick-prev,
+.slick-next {
+	position: absolute;
+	z-index: 9999;
+	border: none;
+	outline: none;
+	background-color: #c1c1c1;
+	width: 60px;
+	height: 100px;
+	bottom: calc(50% - 50px);
+}
+.slick-prev {
+	left: 0px;
+}
+.slick-next {
+	right: 0px;
+}
+.a-slide{ 
+	height: calc(100vh - 300px); 
+	width: 100%; 
+	background-size: cover !important;
+}
+.slick-slider{ 
+	height: 100%;
+} 
+.slick-dots {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	color: transparent;
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+}
+.slick-dots li {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 10px;
+}
+.slick-dots li button {
+	border: none;
+	outline: none;
+	background-color: red;
+	height: 15px;
+	width: 15px;
+	padding: 0px;
+	border-radius: 50%;
+}
+.slick-dots li.slick-active button {
+	background-color: grey;
+}
+
