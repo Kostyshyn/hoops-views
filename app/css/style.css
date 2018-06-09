@@ -325,8 +325,55 @@ input[type="checkbox"]:checked ~ .checkmark {
 .preview-gallery .slick-next:hover {
 	opacity: 1;
 } 
-.product-main-img {
-	
+.product-main-img a,
+.preview-gallery .item a {
+	outline: none;
+}
+
+.product-size-select {
+	border-radius: 0px;
+	border: 1px solid #c1c1c1;
+	font-size: 12px;
+	color: #c1c1c1;
+}
+.product-size-select:focus,
+.product-size-select:active,
+.product-size-select:focus {
+	outline: none;
+	border: 1px solid #c1c1c1;
+	box-shadow: none;
+}
+.product-control {
+	display: flex;
+}
+.product-form-control {
+	display: inline-block;
+	box-sizing: border-box;
+	height: 40px;
+	line-height: 38px;
+	text-align: center;
+	width: 50%;
+	border: 1px solid #2f4a5d;
+	margin-left: 5px;
+	font-size: 12px;
+	background-color: #fff;
+	color: #2f4a5d;
+	transition: .15s ease-in-out;
+}
+.product-form-control:active,
+.product-form-control:focus {
+	text-decoration: none;
+	outline: none;
+}
+.product-form-control.add-to-cart {
+	margin-left: 0px;
+	margin-right: 5px;
+	background-color:#2f4a5d;
+	color: #fff;
+}
+.product-form-control:hover {
+	background-color:#2f4a5d;
+	color: #fff;
 }
 
 .product-description {
@@ -334,7 +381,7 @@ input[type="checkbox"]:checked ~ .checkmark {
 }
 .description-collapse {
 	color: #2f4a5d;
-	font-size: 14px;
+	font-size: 12px;
 	padding: 5px 0px;
 }
 .description-collapse .info-collapse {

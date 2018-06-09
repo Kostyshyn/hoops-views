@@ -61,40 +61,57 @@
 									<div class="col-lg-3 col-md-3 col-sm-3">
 										<div class="preview-gallery">
 											<div class="item">
-												<img src="http://via.placeholder.com/80x100" alt="">
+												<a data-fancybox="gallery" href="http://via.placeholder.com/385x600">
+													<img src="http://via.placeholder.com/80x100" alt="">
+												</a>
 											</div>
 											<div class="item">
-												<img src="http://via.placeholder.com/80x100" alt="">
+												<a data-fancybox="gallery" href="http://via.placeholder.com/385x600">
+													<img src="http://via.placeholder.com/80x100" alt="">
+												</a>
 											</div>
 											<div class="item">
-												<img src="http://via.placeholder.com/80x100" alt="">
+												<a data-fancybox="gallery" href="http://via.placeholder.com/385x600">
+													<img src="http://via.placeholder.com/80x100" alt="">
+												</a>
 											</div>
 											<div class="item">
-												<img src="http://via.placeholder.com/80x100" alt="">
+												<a data-fancybox="gallery" href="http://via.placeholder.com/385x600">
+													<img src="http://via.placeholder.com/80x100" alt="">
+												</a>
 											</div>
 											<div class="item">
-												<img src="http://via.placeholder.com/80x100" alt="">
+												<a data-fancybox="gallery" href="http://via.placeholder.com/385x600">
+													<img src="http://via.placeholder.com/80x100" alt="">
+												</a>
 											</div>
 											<div class="item">
-												<img src="http://via.placeholder.com/80x100" alt="">
+												<a data-fancybox="gallery" href="http://via.placeholder.com/385x600">
+													<img src="http://via.placeholder.com/80x100" alt="">
+												</a>
 											</div>
 											<div class="item">
-												<img src="http://via.placeholder.com/80x100" alt="">
+												<a data-fancybox="gallery" href="http://via.placeholder.com/385x600">
+													<img src="http://via.placeholder.com/80x100" alt="">
+												</a>
 											</div>
 											<div class="item">
-												<img src="http://via.placeholder.com/80x100" alt="">
+												<a data-fancybox="gallery" href="http://via.placeholder.com/385x600">
+													<img src="http://via.placeholder.com/80x100" alt="">
+												</a>
 											</div>
 											<div class="item">
-												<img src="http://via.placeholder.com/80x100" alt="">
-											</div>
-											<div class="item">
-												<img src="http://via.placeholder.com/80x100" alt="">
+												<a data-fancybox="gallery" href="http://via.placeholder.com/385x600">
+													<img src="http://via.placeholder.com/80x100" alt="">
+												</a>
 											</div>
 										</div>
 									</div>
 									<div class="col-lg-9 col-md-9 col-sm-9">
 										<div class="product-main-img">
-											<img src="http://via.placeholder.com/185x300" alt="">
+											<a data-fancybox="gallery" href="http://via.placeholder.com/385x600">
+												<img src="http://via.placeholder.com/185x300" alt="">
+											</a>
 										</div>									
 									</div>
 								</div>
@@ -105,16 +122,42 @@
 								<div class="place"></div>
 								<form>
 									<div class="form-group">
-									  <label for="sel1">Select list:</label>
-									  <select class="form-control" id="sel1">
+									  <label for="size"></label>
+									  <select class="form-control product-size-select" id="size">
+										<option selected style="display: none;">Выберите размер</option>
 										<option>1</option>
 										<option>2</option>
 										<option>3</option>
 										<option>4</option>
 									  </select>
 									</div>
-								
-									
+									<!-- Trigger the modal with a button -->
+									<button type="button" class="" data-toggle="modal" data-target="#myModal">Таблица размеров</button>
+
+									<!-- Modal -->
+									<div id="myModal" class="modal fade" role="dialog">
+									  <div class="modal-dialog">
+
+										<!-- Modal content-->
+										<div class="modal-content">
+										  <div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Modal Header</h4>
+										  </div>
+										  <div class="modal-body">
+											<p>Some text in the modal.</p>
+										  </div>
+										  <div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										  </div>
+										</div>
+
+									  </div>
+									</div>
+									<div class="form-group product-control">
+										<button class="product-form-control add-to-cart">В корзину</button>
+										<button class="product-form-control">В избранное</button>
+									</div>
 								</form>
 								<div class="description-collapse">
 									<button data-toggle="collapse" data-target="#description" class="product-collapse-btn">Описание</button>
