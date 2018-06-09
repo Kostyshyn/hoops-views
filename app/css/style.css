@@ -61,7 +61,7 @@ body {
 	height: 40px;
 	padding: 0px 15px;
 	line-height: 40px;
-	color: #1F303A;
+	color: #2f4a5d;
 	position: relative;
 }
 .navigation ul.mobile-nav li a {
@@ -76,7 +76,7 @@ body {
 	position: absolute;
 	display: block;
 	height: 1px;
-	background-color: #1F303A;
+	background-color: #2f4a5d;
 	bottom: 0px;
 	left: 0px;
 	transition: .3s ease-in-out;
@@ -147,7 +147,7 @@ footer {
 .products-main-h {
 	padding: 15px 0px;
 	font-size: 18px;
-	color: #1F303A;
+	color: #2f4a5d;
 	font-weight: bold;
 }
 .f-column-list {
@@ -160,7 +160,7 @@ footer {
 }
 .f-column-list li a,
 .collection-list li a {
-	color: #1F303A;
+	color: #2f4a5d;
 	font-size: 14px;
 }
 .copy {
@@ -203,7 +203,7 @@ footer {
 	list-style-type: none;
 }
 .pagination ul li a {
-	color: #1F303A;
+	color: #2f4a5d;
 }
 .pagination ul li a:hover {
 	text-decoration: none;
@@ -229,7 +229,7 @@ footer {
 .product-item-desc {
 	min-height: 70px;
 	background-color: #fff;
-	color: #1F303A;
+	color: #2f4a5d;
 }
 .product-item-date,
 .product-item-name,
@@ -262,7 +262,7 @@ footer {
 	line-height: 50px;
 	text-align: center;
 	font-size: 18px;
-	color: #1F303A;
+	color: #2f4a5d;
 	font-weight: bold;
 }
 .collection-list {
@@ -283,22 +283,87 @@ footer {
 	position: relative;
 	width: 16px;
 	height: 16px;
-	border: 1px solid #1F303A;
+	border: 1px solid #2f4a5d;
 	left: -70px;
 	bottom: -3px;
 	background-color: transparent;
 }
 input[type="checkbox"]:checked ~ .checkmark {
-	background-color: #1F303A;
+	background-color: #2f4a5d;
 }
 
-/* main carousel */
+/* product page */
+
+.product-gallery {
+	padding: 55px 10px 20px 0px
+}
+.preview-gallery {
+	box-sizing: border-box;
+}
+.preview-gallery .item {
+	
+}
+.preview-gallery .item  img,
+.product-main-img img {
+	width: 100%;
+	height: auto;
+}
+.preview-gallery .slick-prev,
+.preview-gallery .slick-next {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 30px;
+	color: #c1c1c1;
+	opacity: .6;
+	transition: .15s ease-in-out;
+}
+.preview-gallery .slick-prev:hover,
+.preview-gallery .slick-next:hover {
+	opacity: 1;
+} 
+.product-main-img {
+	
+}
+
+.product-description {
+	padding: 55px 0px 20px 0px;
+}
+.description-collapse {
+	color: #2f4a5d;
+	font-size: 14px;
+	padding: 5px 0px;
+}
+.description-collapse .info-collapse {
+	padding: 30px 5px;
+}
+.product-collapse-btn {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+.description-collapse button.collapsed:after,
+.description-collapse button:after {
+	display: inline-block;
+	margin-left: 5px;
+}
+.description-collapse button[aria-expanded="true"]:after {
+	content: '-';
+}
+.description-collapse button:after {
+	content: '+';
+}
+
+/* sliders */
 
 .slider {
 	height: 100%;
 }
-.slick-prev,
-.slick-next {
+.slider .slick-prev,
+.slider .slick-next {
 	position: absolute;
 	z-index: 999;
 	border: none;
@@ -312,26 +377,26 @@ input[type="checkbox"]:checked ~ .checkmark {
 	opacity: .6;
 	transition: .15s ease-in-out;
 }
-.slick-prev:hover,
-.slick-next:hover {
+.slider .slick-prev:hover,
+.slider .slick-next:hover {
 	opacity: 1;
 } 
-.slick-prev {
+.slider .slick-prev {
 	left: 0px;
 }
-.slick-next {
+.slider .slick-next {
 	right: 0px;
 }
-.a-slide{ 
+.slider .a-slide{ 
 	height: calc(100vh - 140px); 
 	/*height: 650px;*/
 	width: 100%; 
 	background-size: cover !important;
 }
-.slick-slider{ 
+.slider .slick-slider{ 
 	height: 100%;
 } 
-.slick-dots {
+.slider .slick-dots {
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
@@ -340,12 +405,12 @@ input[type="checkbox"]:checked ~ .checkmark {
 	bottom: 30px;
 	width: 100%;
 }
-.slick-dots li {
+.slider .slick-dots li {
 	list-style-type: none;
 	display: inline-block;
 	margin-right: 10px;
 }
-.slick-dots li button {
+.slider .slick-dots li button {
 	border: none;
 	outline: none;
 	background-color: transparent;
@@ -355,12 +420,20 @@ input[type="checkbox"]:checked ~ .checkmark {
 	padding: 0px;
 	border-radius: 50%;
 }
-.slick-dots li.slick-active button {
+.slider .slick-dots li.slick-active button {
 	background-color: #fff;
 }
 
 /* media */
 
+@media screen and (max-width: 991px){
+	.product-gallery {
+		padding: 15px 0px;
+	}
+	.product-description {
+		padding: 0px 0px 15px 0px;
+	}
+}
 
 @media screen and (max-width: 768px){
 	.navigation .desktop-nav {
