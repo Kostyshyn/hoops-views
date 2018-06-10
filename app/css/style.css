@@ -489,10 +489,11 @@ input[type="radio"]:checked ~ .checkmark:after  {
 }
 .shopping-tabs-nav li {
 	display: inline-block;
-	min-width: 180px;
+	min-width: 220px;
 }
 .shopping-tabs-nav li a {
 	font-size: 32px;
+	font-weight: bold;
 	text-transform: uppercase;
 	color: #c1c1c1;
 	transition: .15s;
