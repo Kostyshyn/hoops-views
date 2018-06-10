@@ -236,18 +236,25 @@ footer {
 .product-item-price {
 	text-align: center;
 }
-.product-item-date {
+.product-item-date,
+.product-date {
 	height: 32px;
 	line-height: 32px;
 	font-size: 12px;
 	color: #c1c1c1;
 }
-.product-item-name {
+.product-item-name,
+.product-name {
 	font-size: 14px;
 }
-.product-item-price {
+.product-item-price,
+.product-price {
 	font-size: 14px;
 	font-weight: bold;
+}
+.product-name, 
+.product-price {
+	color: #2f4a5d;
 }
 .overlay-img {
 	position: absolute;
@@ -329,7 +336,12 @@ input[type="checkbox"]:checked ~ .checkmark {
 .preview-gallery .item a {
 	outline: none;
 }
-
+.product-name {
+	padding-top: 30px;
+}
+.product-price {
+	padding-bottom: 20px;
+}
 .product-size-select {
 	border-radius: 0px;
 	border: 1px solid #c1c1c1;
@@ -368,14 +380,76 @@ input[type="checkbox"]:checked ~ .checkmark {
 .product-form-control.add-to-cart {
 	margin-left: 0px;
 	margin-right: 5px;
-	background-color:#2f4a5d;
+	background-color: #2f4a5d;
 	color: #fff;
 }
 .product-form-control:hover {
 	background-color:#2f4a5d;
 	color: #fff;
 }
-
+.size-modal-toggle {
+	border: none;
+	background-color: transparent;
+	outline: none;
+	color: #c1c1c1;
+	text-decoration: underline;
+	margin-bottom: 15px;
+	font-size: 12px;
+}
+.modal-content {
+	border-radius: 0px;
+	border: none;
+	color: #2f4a5d;
+}
+.color-select {
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	align-items: center;
+}
+.color-select li {
+	display: inline-block;
+	list-style-type: none;
+	height: 20px;
+	margin-right: 6px;
+}
+.color-select li input {
+	visibility: hidden;
+}
+.color-select li label {
+	width: 18px;
+	height: 18px;
+}
+.color-select li .checkmark {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background-color: grey;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+	top: -20px;
+}
+.color-select li .checkmark:after {
+	content: '';
+	display: none;
+	width: 18px;
+	height: 1px;
+	position: relative;
+	bottom: -20px;
+	background-color: #2f4a5d;
+}
+input[type="radio"]:checked ~ .checkmark:after  {
+	display: block;
+}
+.color-selected {
+	font-size: 12px;
+	color: #2f4a5d;
+	padding: 15px 0px; 
+}
+.color-selected span {
+	margin-left: 5px;
+}
 .product-description {
 	padding: 55px 0px 20px 0px;
 }

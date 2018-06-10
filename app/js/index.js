@@ -51,4 +51,9 @@ $(() => {
 	// 	$('.nav-button').toggleClass('open');
 	// 	$('.mobile-nav').fadeToggle();
 	// });
+	
+	$('.color-select li input').click((e) => {
+		$('.color-selected span').text(e.target.value);
+	});
+	
 });
