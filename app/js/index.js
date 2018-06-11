@@ -5,11 +5,15 @@ $(() => {
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 2,
+
         vertical: verticalGallery(),
+	    dots: false,
+	    prevArrow: false,
+	    nextArrow: false,
         // autoplay: true,
         // autoplaySpeed: 1000,
-        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-up"></i></button>',
-        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-down"></i></button>',
+        // prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-up"></i></button>',
+        // nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-down"></i></button>',
         responsive: [
         {
             breakpoint: 1024,
