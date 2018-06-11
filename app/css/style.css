@@ -491,21 +491,157 @@ input[type="radio"]:checked ~ .checkmark:after  {
 	display: inline-block;
 	min-width: 220px;
 }
-.shopping-tabs-nav li a {
+.shopping-tabs-nav li a p {
 	font-size: 32px;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #c1c1c1;
 	transition: .15s;
+	border-bottom: 2px solid transparent;
+	/*margin-bottom: 0px;*/
 }
-.shopping-tabs-nav li.active a {
+.shopping-tabs-nav li.active a p {
 	color: #2f4a5d;
 	border-bottom: 2px solid #2f4a5d;
+}
+.shopping-tabs-nav li a span.products-count {
+	font-size: 16px;
+	color: #c1c1c1;
+	font-weight: bold;
 }
 .shopping-tabs-nav li a:focus,
 .shopping-tabs-nav li a:hover {
 	text-decoration: none;
 	
+}
+.shopping-cart-item-header {
+	color: #c1c1c1;
+	border-bottom: 2px solid #c1c1c1;
+}
+.shopping-cart-item-footer {
+	margin-top: 15px;
+	border-bottom: 2px solid #c1c1c1;
+}
+.shopping-cart-item-preview {
+	padding: 20px 0px;
+	display: flex;
+}
+.shopping-cart-item-preview .product-name,
+.shopping-cart-item-preview .product-date {
+	padding: 0px 0px 0px 15px;
+}
+.shopping-cart-item-preview .product-name {
+	padding-top: 15px;
+}
+.shopping-cart-item-right {
+	min-height: 240px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.shopping-cart-item-control,
+.shopping-cart-item-price {
+	text-align: right;
+	color: #2f4a5d;
+}
+.shopping-cart-item-price {
+	margin-top: 10px;
+}
+.t-right {
+	text-align: right;
+}
+.shopping-cart-item-control a {
+	color: #2f4a5d;
+	font-size: 14px;
+	display: inline-block;
+}
+.shopping-cart-item-control a:hover {
+	text-decoration: none;
+}
+table.highlighted {
+	overflow: hidden;
+	cursor: pointer;
+}
+.highlighted td.table-color-td {
+	box-shadow: 0px 0px 0px 2px transparent;
+	width: 50px;
+	color: #c1c1c1;
+}
+td, th {
+	margin: 10px;
+	padding: 10px;
+	position: relative;
+	outline: 0;
+	text-align: center;
+}
+.highlighted tbody {
+	border-right: 1px solid #c1c1c1;
+}
+.highlighted td {
+	box-shadow: 0px 0px 0px 1px #c1c1c1;
+	box-sizing: border-box;
+}
+.highlighted td:hover {
+	background-color: #9cd3e5;
+}
+td span {
+	/*border: 1px solid #c1c1c1;*/
+	width: 36px;
+	height: 10px;
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	bottom: -2px;
+	left: 1px;
+}
+body:not(.nohover) tbody tr:hover {
+	background-color: lightblue;
+}
+.table-color {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background-color: grey;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+	/*top: -20px;*/
+}
+.highlighted td:hover::after,
+.highlighted thead th:not(:empty):hover::after,
+.highlighted td:focus::after,
+.highlighted thead th:not(:empty):focus::after { 
+	content: '';  
+	height: 10000px;
+	left: 0;
+	position: absolute;  
+	top: -5000px;
+	width: 100%;
+	z-index: -1;
+}
+
+.highlighted td:hover::after,
+.highlighted th:hover::after {
+	background-color: lightblue;
+}
+
+.highlighted td:focus::after,
+.highlighted th:focus::after {
+	background-color: lightblue;
+}
+
+/* Focus stuff for mobile */
+.highlighted td:focus::before,
+.highlighted tbody th:focus::before {
+	background-color: lightblue;
+	content: '';  
+	height: 100%;
+	top: 0;
+	left: -5000px;
+	position: absolute;  
+	width: 10000px;
+	z-index: -1;
 }
 
 /* sliders */
