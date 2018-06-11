@@ -134,6 +134,119 @@ body {
 	transform: rotate(-45deg);
 }
 
+#cart-modal.modal {
+	top: 70px;
+    right: -60%;
+}
+.top-navigation {
+	height: 100px;
+}
+.logo {
+	text-align: center;
+	padding-top: 20px;
+}
+.search-input.hide {
+	display: none;
+}
+.search-input {
+	height: 100px;
+	padding-top: 25px;
+	display: flex;
+}
+.search-input input {
+	height: 50px;
+	width: calc(100% - 50px);
+	border: none;
+	outline: none;
+	background-color: #fff;
+	color: #2f4a5d;
+	border-right: 1px solid #1F303A;
+	padding: 0px 10px;
+	font-size: 22px;
+}
+.search-input button {
+	height: 50px;
+	width: 50px;
+	border: none;
+	outline: none;
+	background-color: #fff;
+	color: #2f4a5d;
+}
+.right-menu {
+	padding: 20px 0px;
+	height: 100px;
+	display: flex;
+	/*flex-direction: column;*/
+	align-items: center;
+	color: #fff;
+}
+.right-menu span,
+.right-menu span a {
+	color: #fff;
+	font-size: 12px;
+	display: inline-block;
+	padding: 0px 10px;
+}
+.search-toggle {
+	cursor: pointer;
+}
+.cart-items-container {
+	padding: 20px;
+}
+.preview-cart-item {
+	margin-top: 10px;
+	padding: 15px 0px;
+	border-bottom: 1px solid #1F303A;
+	display: flex;
+	/*justify-content: space-between;*/
+}
+.preview-cart-item .info {
+	display: inline-block;
+	padding-left: 10px;
+	color: #c1c1c1;
+	min-width: 90px;
+}
+.preview-cart-item .info .name {
+	color: #2f4a5d;
+}
+.preview-cart-item .price {
+	display: flex;
+}
+.delete-product {
+	margin-top: auto;
+	align-self: flex-end;
+	cursor: pointer;
+	color: #c1c1c1;
+}
+.preview-cart-item p {
+	font-size: 12px;
+	margin-bottom: 0px;
+}
+
+a.buy-btn {
+	margin-top: 20px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	background-color:  #2f4a5d;
+	color: #fff;
+}
+a.buy-btn:hover {
+	text-decoration: none;
+}
+.cart-items-footer .total,
+.cart-items-footer .cart-delivery {
+	display: flex;
+	justify-content: space-between;
+	font-size: 12px;
+	margin-top: 20px;
+}
+.cart-items-footer .total {
+	font-weight: bold;
+}
+
 /* footer */
 
 footer {
@@ -513,6 +626,9 @@ input[type="radio"]:checked ~ .checkmark:after  {
 .shopping-tabs-nav li a:hover {
 	text-decoration: none;
 	
+}
+.shopping-cart-item {
+	margin-bottom: 40px;
 }
 .shopping-cart-item-header {
 	color: #c1c1c1;
