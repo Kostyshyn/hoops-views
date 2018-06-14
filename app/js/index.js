@@ -61,8 +61,10 @@ $(() => {
 	});
 
     $('.search-toggle').click((e) => {
-        $('.logo').toggle();
-        $('.search-input').toggleClass('hide');
+        $('.sub-header-toggle').toggleClass('show');
+    });
+    $('.hide-search').click((e) => {
+        $('.sub-header-toggle').toggleClass('show');
     });
 	
 });
